@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!--
+	Licensed under the GPL Version 3 license.
+	http://www.gnu.org/licenses/gpl.html
+	This script is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This script is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+-->
+
+<root version="3.0" release="3">
+
+	<properties>
+		<name>CoreRPG - on Demand Manual Dice (DM control-click-dice)</name>
+		<version>1.0</version>
+		<author>Celestian</author>
+		<description>Allows DM to control-click dice to bring up the manual dice window for manual roll.</description>
+	</properties>
+
+	<base>
+    <includefile source="desktop/template_desktop_adnd.xml" />
+    <script name="ManageronDemandManualDice" file="scripts/manager_action_attack_onDemandManualDice.lua" />
+	</base>
+	
+	<announcement text="-- onDemand Manual Dice v1.0\rCoreRPG+ version for Fantasy Grounds\r--by Celestian 2018" font="emotefont" />
+</root>
