@@ -6,7 +6,11 @@
 -->
 
 <root>
-  <chatwindow name="chat" merge="join">
-    <script file="desktop/scripts/chat_window_adnd.lua" mergerule="replace"/>
-  </chatwindow>
+	
+	<template name="chatwindow_step">
+		<chatwindow name="chat"  merge="join">
+			<script file="desktop/scripts/chat_window_adnd.lua" mergerule="replace"/>
+		</chatwindow>
+	</template>
+
 </root>
