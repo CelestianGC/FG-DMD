@@ -22,11 +22,14 @@ function onDragStart(button, x, y, draginfo)
 	return ActionsManager.onChatDragStart(draginfo);
 end
 
+--	Change "aDice and #aDice > 0 and not OptionsManager.isOption("MANUALROLL", "on")" to
+--	"aDice and #aDice > 0 and (not OptionsManager.isOption("MANUALROLL", "on") and (not Input.isControlPressed() and User.isHost))"
 function onDrop(x, y, draginfo)
 	local bReturn = ActionsManager.actionDrop(draginfo, nil);
+	
 	if bReturn then
 		local aDice = draginfo.getDieList();
-		if aDice and #aDice > 0 and (not OptionsManager.isOption("MANUALROLL", "on") and (not Input.isControlPressed() and User.isHost() ) ) then
+		if aDice and #aDice > 0 and (not OptionsManager.isOption("MANUALROLL", "on") and (not Input.isControlPressed() and User.isHost)) then
 			return;
 		end
 		return true;
