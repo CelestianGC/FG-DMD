@@ -9,7 +9,7 @@ end
 -- control-dice click to prompt for manual roll
 function adnd_roll(rSource, vTargets, rRoll, bMultiTarget)
 	if #(rRoll.aDice) > 0 then
-		if not rRoll.bTower and (OptionsManager.isOption("MANUALROLL", "on") or (User.isHost() and Input.isControlPressed())) then
+		if not rRoll.bTower and (OptionsManager.isOption("MANUALROLL", "on") or (Session.isHost and Input.isControlPressed())) then
 			local wManualRoll = Interface.openWindow("manualrolls", "");
 			wManualRoll.addRoll(rRoll, rSource, vTargets);
 		else
