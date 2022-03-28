@@ -18,7 +18,7 @@
 
 	<properties>
 		<name>CoreRPG - on Demand Manual Dice (DM control-click-dice)</name>
-		<version>2.7</version>
+		<version>3.0</version>
 		<author>Celestian</author>
 		<description>Allows DM to control-click dice to bring up the manual dice window for manual roll.</description>
 	</properties>
@@ -28,5 +28,5 @@
     <script name="ManageronDemandManualDice" file="scripts/manager_action_attack_onDemandManualDice.lua" />
 	</base>
 	
-	<announcement text="-- onDemand Manual Dice v2.7\rCoreRPG+ version for Fantasy Grounds\r--by Celestian 2018-2021" font="emotefont" />
+	<announcement text="-- onDemand Manual Dice v3.0\rCoreRPG+ version for Fantasy Grounds\r--by Celestian 2018-2022" font="emotefont" />
 </root>
